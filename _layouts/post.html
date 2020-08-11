@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<br>
+<br>
+{% include post/title.html %}
+{% include post/post_info.html %}
+<br>
+
+{{ content }}
+
+<br>
+{% if page.comments %}
+{% include post/disqus.html %}
+{% endif %}
+<br>
+
+{% include page/about.html %}

@@ -1,0 +1,5 @@
+{% for tag in page.tags %}
+    <span class="badge badge-info">{{ tag }}</span>
+{% endfor %}
+<p class="text-muted">{{ page.date | date: "%d %B %Y" }}</p>
+<hr>
